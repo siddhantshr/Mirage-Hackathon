@@ -61,10 +61,12 @@ To install and use the anti theft parcel detector, follow these steps:
 
 3. Install Pytorch:
    ```bash
-   pip3 install torch torchvision torchaudio
+   pip3 install torch==1.13.1 torchvision==0.14.1 torchaudio
    ```
 
    * if unable to install, try referring: https://pytorch.org/get-started/locally/
+
+   **PLEASE MAKE SURE YOU HAVE 64BIT PYTHON3 INSTALLED**
 
 3. The weights have been provided in the yolov7 folder
 
