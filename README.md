@@ -59,12 +59,21 @@ To install and use the anti theft parcel detector, follow these steps:
    pip install -r requirements.txt
    ```
 
+3. Install Pytorch:
+   ```bash
+   pip3 install torch torchvision torchaudio
+   ```
+
+   * if unable to install, try referring: https://pytorch.org/get-started/locally/
+
 3. The weights have been provided in the yolov7 folder
 
-4. Run the shell code to run the camera.
-    ```bash
-    ./run.sh
-    ```
+4. Run the code to run the camera.
+   ```bash
+    python3 yolov7/detect.py --weights yolov7/parcel1.pt yolov7/parcel2.pt --conf 0.2 --img-size 640 --source 0 --view-img --no-trace
+   ```
+
+   * camera source number may change (0|1|2|3|4) depending on your computer.
 
 5. Place a parcel in front of the camera to start Detecting.
 

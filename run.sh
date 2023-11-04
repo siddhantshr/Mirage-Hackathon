@@ -1,1 +1,0 @@
-python3 yolov7/detect.py --weights yolov7/parcel1.pt yolov7/parcel2.pt --conf 0.2 --img-size 640 --source 0 --view-img --no-trace
